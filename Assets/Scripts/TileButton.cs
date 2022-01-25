@@ -11,5 +11,17 @@ public class TileButton : MonoBehaviour
     {
         Debug.Log("Tile Minigame Button is pressed (From Button Side)");
         gameSystemManager.CreateGrid();
+        gameObject.SetActive(false);
     }
+
+    public void TurnOnButton()
+    {
+        gameObject.SetActive(true);
+    }
+    public void TurnOffButton()
+    {
+        gameObject.SetActive(false);
+    }
+
+    
 }
